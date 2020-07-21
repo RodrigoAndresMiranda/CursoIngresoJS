@@ -1,10 +1,22 @@
-/*
-Debemos lograr tomar el importe por ID ,
-transformarlo a entero (parseInt), luego
-mostrar el importe con un aumento del 10 %
-en el cuadro de texto "RESULTADO".*/
+//Miranda, Rodrigo
 function mostrarAumento()
 {
 
-	alert("ok");
+	var sueldoIngresado;
+	var sueldoAumentado;
+	var sueldoFinal;
+	var porcentajeConsiderado;
+		
+
+	sueldoIngresado=txtIdSueldo.value;
+	sueldoIngresado=parseInt(sueldoIngresado);
+	porcentajeConsiderado=10/100;
+
+	sueldoAumentado=sueldoIngresado*porcentajeConsiderado;
+	sueldoFinal=sueldoAumentado+sueldoIngresado;
+
+
+	txtIdResultado.value=sueldoFinal;
+
 }
+

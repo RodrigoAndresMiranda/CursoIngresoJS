@@ -1,9 +1,24 @@
-/*
-Debemos lograr tomar el importe por ID.
-Transformarlo a entero (parseInt), luego
-mostrar el importe con un Descuento del 25 %
-en el cuadro de texto "RESULTADO"*/
+//Miranda, Rodrigo
+
 function mostrarAumento()
 {
-	alert("ok");
+	var importeIngresado;
+	var importeDescuento;
+	var importeFinal;
+	var porcentajeConsiderado;
+	var	Porcentaje;
+
+	importeIngresado=prompt("ingrese importe inicial: ");
+	importeIngresado=parseInt(importeIngresado);
+
+	porcentajeConsiderado=prompt("ingrese porcentaje a descontar: ");
+	porcentajeConsiderado=parseInt(porcentajeConsiderado);
+	Porcentaje=porcentajeConsiderado/100;
+
+	importeDescuento=importeIngresado*Porcentaje;
+	importeFinal=importeIngresado-importeDescuento;
+
+
+	alert("El importe es $"+importeIngresado+" el descuento es $"+importeDescuento+" y el precio final es $"+importeFinal+", gracias por su compra");
+
 }
