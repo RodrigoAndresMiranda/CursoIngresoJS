@@ -4,8 +4,8 @@ se debe mostrar un mensaje como el siguiente "Esto funciona de maravilla"*/
 function mostrar()
 {
 	
-	alert("Hola cotanza");
-	alert("Etsito");
+	alert("Esto funciona de maravilla");
+
 
 // comentarios antes o despues de la llave//
 // alert = mensaje literal	
